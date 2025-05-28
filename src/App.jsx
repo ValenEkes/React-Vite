@@ -3,10 +3,10 @@ import './Formulario'
 import Formulario from './Formulario'
 import Cita from './Cita'
 import Listado from './Listado'
-import React,{useState} from "react"
+import React,{useEffect, useState} from "react"
 function App() {
 const [citas,setCitas]=useState([])
-
+useEffect(()=>{})
   return (
     <>
     <h1>Administrador de paciente</h1>

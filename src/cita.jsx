@@ -37,7 +37,6 @@ let Cita = ({mascota, duenio, fecha, hora, sintomas,eliminar}) =>{
         </div>
         <button class="button elimnar u-full-width" onClick={eliminar}>Eliminar</button>
       </div>
-      <p></p>
     </>
   );
 };
