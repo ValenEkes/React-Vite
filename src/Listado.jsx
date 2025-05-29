@@ -4,7 +4,8 @@ import Mensaje from "./Mensaje";
 
 let Listado = ({citas, setCitas}) => {
 let EliminarCita=(e)=>{
-setCitas(citas.filter(citas=>citas.nombreMascota!==e.nombreMascota||citas.nombreDueño!==e.nombreDueño||citas.fecha!==e.fecha||citas.hora!==e.hora||citas.sintomas!==e.sintomas))
+ setCitas(citas.filter(citas=>citas.nombreMascota!==e.nombreMascota||citas.nombreDueño!==e.nombreDueño||citas.fecha!==e.fecha||citas.hora!==e.hora||citas.sintomas!==e.sintomas))
+localStorage.setItem('citas',JSON.stringify(citas.filter(citas=>citas.nombreMascota!==e.nombreMascota||citas.nombreDueño!==e.nombreDueño||citas.fecha!==e.fecha||citas.hora!==e.hora||citas.sintomas!==e.sintomas)))
 }  
   return (
     <div class="one-half column">

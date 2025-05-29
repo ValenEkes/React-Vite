@@ -6,7 +6,18 @@ import Listado from './Listado'
 import React,{useEffect, useState} from "react"
 function App() {
 const [citas,setCitas]=useState([])
-useEffect(()=>{})
+useEffect(()=>{
+  const citasGuardadas=localStorage.getItem('citas')
+  if(citasGuardadas){
+    setCitas(JSON.parse(citasGuardadas))
+  }
+},[])
+useEffect(()=>{
+  if(citas.length!=0||citas.length>0){
+    localStorage.setItem('citas', JSON.stringify(citas));  
+  }
+}, [citas])
+
   return (
     <>
     <h1>Administrador de paciente</h1>
