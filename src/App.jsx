@@ -1,7 +1,7 @@
 import './App.css'
 import './Formulario'
 import Formulario from './Formulario'
-import Cita from './Cita'
+import Cita from './cita'
 import Listado from './Listado'
 import React,{useEffect, useState} from "react"
 function App() {

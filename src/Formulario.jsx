@@ -42,7 +42,7 @@ let Formulario = ({setCitas, citas}) => {
           <Mensaje mensaje="Sintomas" />
           <input type="text" name="Sintomas" class="u-full-width" placeholder="Sintomas" />
         </div>
-        <button class="u-full-width button primary" >Agregar Cita</button>
+        <button class="u-full-width button primary">Agregar Cita</button>
       </form>
     
     </>
